@@ -1,0 +1,25 @@
+<script>
+    const specialData = {
+        id: 1,
+        created: new Date(),        // Complex Date Object
+        greet: function () { return "Hi"; }, // Function
+        value: undefined            // Undefined value
+    };
+
+    // 1. Try structuredClone (Preserves Dates, but throws error on Functions)
+    // const properClone = structuredClone(specialData); 
+    // Note: structuredClone will THROW AN ERROR if it sees a Function!
+
+    // 2. Try JSON Clone
+    const jsonBrokenClone = JSON.parse(JSON.stringify(specialData));
+
+    console.log(jsonBrokenClone);
+    /* Output:
+    {
+      id: 1,
+      created: "2023-10-27T10:00:00.000Z" // ⚠️ Converted to String! Not a Date object anymore.
+      // greet: LOST! Functions are removed.
+      // value: LOST! Undefined keys are removed.
+    }
+    */
+</script>

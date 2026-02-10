@@ -1,0 +1,44 @@
+<script>
+    /*
+    Nested object : An object in an object
+
+    const original = { 
+        name: "Alice", 
+        details: { hobby: "Chess" } // Nested object
+    };
+
+    */
+
+    // 1. Shallow Cloning
+    let object1 = {
+        name: 'Bath',
+        age: 23,
+        address: { // Nested Object
+            city: 'Phnom Penh',
+            zip: '127533'
+        }
+    };
+
+    // Create Clone
+    let copyObject = {...object1};
+    console.log(copyObject);
+
+    // Another same way to clone
+    let assignObject = Object.assign({}, object1); 
+    console.log(assignObject);
+
+
+    // Reassign object value ( Safe to reassign )
+    // It just copy the object's form and reassign the value
+    copyObject.name = 'John';
+    // Reassign Nested object value ( Dangerous to reassign )
+    // It completely changed the value
+    copyObject.address.city = 'Battambang';
+
+    console.log(object1.name); // Bath
+    console.log(copyObject.name); // John
+
+    console.log(object1.address.city); // Battambang
+    console.log(copyObject.address.city); // Battambang
+
+</script>
