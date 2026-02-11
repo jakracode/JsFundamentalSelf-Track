@@ -1,0 +1,23 @@
+<script>
+    const numbers = [1, 2, 3, 4, 5, -5, -2];
+
+    const filtered = numbers.filter(values => {
+        return values >= 0;
+    })
+
+    // Map them to String
+    // const items = filtered.map(values => '<li>' + values + '</li>');
+    // const html = '<ul>' + items.join(' ') + '</ul>';
+
+    // Map them to object
+    const items = filtered.map(values => {
+        // const obj = {value: values}
+        // return obj;
+        return {value: values} // We can also write in short
+    }) // Every number turned to object's value
+
+
+    // The shortest one
+    const filtered2 = numbers.filter(values => values >= 0).map(values => ({value: values}));
+
+</script>
