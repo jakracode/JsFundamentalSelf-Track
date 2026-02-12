@@ -1,0 +1,26 @@
+<script>
+    function sum(a, b) {
+        console.log(a + b);
+    }
+
+    sum(3, 67); // Result in 70
+    // If we input more than two values, it still catch only the first two index to calculate
+    sum(3,4,6,8); // Result in 7
+
+    // How to fix: use special keyword (argument)
+
+    function newSum(a,b){
+        let total = 0;
+        for(let value of arguments){
+            total += value;
+        }
+        // console.log(total);
+        // console.log(arguments);
+
+        // Or just use
+        return total;
+    }
+
+    // newSum(3,5,7,34,78); // Result 127
+    console.log(newSum(3,5,7,34,78));
+</script>
