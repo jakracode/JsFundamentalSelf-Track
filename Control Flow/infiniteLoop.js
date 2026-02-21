@@ -1,0 +1,14 @@
+// while
+    let a = 0;
+    while ( a < 5 ){
+        console.log(a);
+        // There has no increment, so a will always smaller than 5.
+    }
+
+    // do while
+    let b = 0;
+    do {
+        console.log(b);
+    } while (b < 5);
+
+    // Notice : Avoid infinite loop, it cause affect on computer

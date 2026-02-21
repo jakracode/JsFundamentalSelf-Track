@@ -1,0 +1,5 @@
+// String Primitive
+     let string1 = 'This is a primitive string!';
+
+     // String Object
+     let string2 = new String('This is an object string!');

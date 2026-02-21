@@ -1,0 +1,12 @@
+function createCircle(radius){
+        this.radius = radius;
+        this.draw = function(){
+            console.log('hello');
+        }
+        return this;
+    }
+
+    const circle = new createCircle(3);
+    console.log(circle);
+    const draw = new createCircle().draw();
+    console.log(draw);

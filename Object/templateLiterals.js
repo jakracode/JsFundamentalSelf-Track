@@ -1,0 +1,24 @@
+// String Primitive
+    let message1 = "This is \nthe first message";
+
+    // Template Literal
+    let message2 = `This is
+    the first message`;
+
+    /*
+    In String Primitive, we have to use \n to start a new line.
+    In Template Literal, we can just tap enter to start a new line.
+    */
+
+   // We can also use placeholder in Template Literal
+   let name = 'Bath';
+   let message3 = 'Hi ' + name + ',\n';
+
+   let Message =
+   `
+   ${message3}
+
+   This is my first message.
+
+   Thank!
+   `;

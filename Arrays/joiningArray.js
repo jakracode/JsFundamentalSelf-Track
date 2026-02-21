@@ -1,0 +1,13 @@
+const numbers = [1,2,3,4,5,6];
+    const joined = numbers.join(';')
+    console.log(joined); // Result 1,2,3,4,5,6
+
+    const message = "This is my first message!";
+
+    // Split the message by checking its spaces
+    const part = message.split(' ');
+    console.log(part);
+
+    // Combine it by adding - in the middle of each word.
+    const combined = part.join('-');
+    console.log(combined);

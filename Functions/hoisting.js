@@ -1,0 +1,11 @@
+walk(); // It works as normal
+
+    function walk(){
+        console.log('Walk');
+    }
+
+    run(); // Didn't work due to the declaration before declare the variable
+
+    const run = function(){
+        console.log('Run');
+    };

@@ -1,0 +1,6 @@
+let array1 = [1,2,3];
+    let array2 = [4,5,6];
+
+    const combined = [...array1, 'a', ...array2, 'b']; // Equal to Concat
+
+    const copy = [...combined];

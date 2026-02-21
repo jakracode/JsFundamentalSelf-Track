@@ -1,0 +1,6 @@
+// do while is uncommon use, instead we use for and while
+    let i = 0;
+    do {
+        console.log(i);
+        i++;
+    }while (i < 9);
